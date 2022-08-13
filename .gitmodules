@@ -1,3 +1,9 @@
 [submodule "sandbox/lib/graphics-template"]
 	path = sandbox/lib/graphics-template
 	url = https://github.com/joshortner/graphics-template.git
+[submodule "sandbox/lib/grfx"]
+	path = sandbox/lib/grfx
+	url = https://github.com/joshortner/grfx.git
+[submodule "lib/gmath"]
+	path = lib/gmath
+	url = https://github.com/joshortner/gmath.git

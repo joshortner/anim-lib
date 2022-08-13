@@ -5,13 +5,15 @@ project(sandbox)
 
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib)
-set(GFX_TEMP_DIR ${LIB_DIR}/graphics-template)
+set(GRFX ${LIB_DIR}/grfx)
+set(ANIML_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../animl)
 
-add_subdirectory(${GFX_TEMP_DIR} ${GFX_TEMP_DIR}/build/lib)
+add_subdirectory(${ANIML_DIR} ${ANIML_DIR}/build/lib)
+add_subdirectory(${GRFX} ${GRFX}/build/lib)
 
 include_directories(
 	${SRC_DIR}
-    #${GFX_TEMP_DIR}/src
+    ${ANIML_DIR}/src
 )
 
 file(
@@ -26,5 +28,6 @@ add_executable(
 
 target_link_libraries(
 	${PROJECT_NAME}
-    graphics_template
+    grfx
+	animl
 )
