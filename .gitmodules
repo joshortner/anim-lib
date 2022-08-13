@@ -7,3 +7,6 @@
 [submodule "lib/gmath"]
 	path = lib/gmath
 	url = https://github.com/joshortner/gmath.git
+[submodule "animl/lib/gmath"]
+	path = animl/lib/gmath
+	url = https://github.com/joshortner/gmath.git
